@@ -22,6 +22,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/test", (req, res) => {
+  res.send("tes");
+});
+
 server.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
